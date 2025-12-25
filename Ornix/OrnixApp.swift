@@ -9,9 +9,28 @@ import SwiftUI
 
 @main
 struct OrnixApp: App {
+    @AppStorage("currentUserId") var currentUserId: Int = -1
+    init() {
+            
+        AppStorageManager.shared.initializeAllDefaults()
+
+        
+        
+        }
+    
     var body: some Scene {
         WindowGroup {
-            ChooseInitView()
-        }
+                  ZStack {
+                     
+                      if currentUserId != -1 {
+                          NavBarView()
+                      } else {
+                         
+                          ChooseInitView()
+                              .transition(.opacity)
+                              .animation(.easeInOut(duration: 0.5), value: currentUserId)
+                      }
+                  }
+              }
     }
 }

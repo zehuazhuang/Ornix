@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DDAB03002EF14382000B7A78 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = DDAB02FF2EF14382000B7A78 /* WaterfallGrid */; };
+		DD1F01682EFBF5FB00B753FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1F01672EFBF5FB00B753FB /* LaunchScreen.storyboard */; };
+		DD426D362EFBF2D1005CD0FA /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = DD426D352EFBF2D1005CD0FA /* WaterfallGrid */; };
+		DD426D392EFBF2E1005CD0FA /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = DD426D382EFBF2E1005CD0FA /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD657C372EF0F93300161DA6 /* Ornix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ornix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1F01672EFBF5FB00B753FB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD426D262EFBF2BB005CD0FA /* Ornix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ornix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DD657C392EF0F93300161DA6 /* Ornix */ = {
+		DD426D282EFBF2BB005CD0FA /* Ornix */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Ornix;
 			sourceTree = "<group>";
@@ -23,29 +26,31 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DD657C342EF0F93300161DA6 /* Frameworks */ = {
+		DD426D232EFBF2BB005CD0FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDAB03002EF14382000B7A78 /* WaterfallGrid in Frameworks */,
+				DD426D362EFBF2D1005CD0FA /* WaterfallGrid in Frameworks */,
+				DD426D392EFBF2E1005CD0FA /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD657C2E2EF0F93300161DA6 = {
+		DD426D1D2EFBF2BB005CD0FA = {
 			isa = PBXGroup;
 			children = (
-				DD657C392EF0F93300161DA6 /* Ornix */,
-				DD657C382EF0F93300161DA6 /* Products */,
+				DD426D282EFBF2BB005CD0FA /* Ornix */,
+				DD426D272EFBF2BB005CD0FA /* Products */,
+				DD1F01672EFBF5FB00B753FB /* LaunchScreen.storyboard */,
 			);
 			sourceTree = "<group>";
 		};
-		DD657C382EF0F93300161DA6 /* Products */ = {
+		DD426D272EFBF2BB005CD0FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD657C372EF0F93300161DA6 /* Ornix.app */,
+				DD426D262EFBF2BB005CD0FA /* Ornix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,78 +58,81 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD657C362EF0F93300161DA6 /* Ornix */ = {
+		DD426D252EFBF2BB005CD0FA /* Ornix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD657C422EF0F93500161DA6 /* Build configuration list for PBXNativeTarget "Ornix" */;
+			buildConfigurationList = DD426D312EFBF2BC005CD0FA /* Build configuration list for PBXNativeTarget "Ornix" */;
 			buildPhases = (
-				DD657C332EF0F93300161DA6 /* Sources */,
-				DD657C342EF0F93300161DA6 /* Frameworks */,
-				DD657C352EF0F93300161DA6 /* Resources */,
+				DD426D222EFBF2BB005CD0FA /* Sources */,
+				DD426D232EFBF2BB005CD0FA /* Frameworks */,
+				DD426D242EFBF2BB005CD0FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DD657C392EF0F93300161DA6 /* Ornix */,
+				DD426D282EFBF2BB005CD0FA /* Ornix */,
 			);
 			name = Ornix;
 			packageProductDependencies = (
-				DDAB02FF2EF14382000B7A78 /* WaterfallGrid */,
+				DD426D352EFBF2D1005CD0FA /* WaterfallGrid */,
+				DD426D382EFBF2E1005CD0FA /* AlertToast */,
 			);
 			productName = Ornix;
-			productReference = DD657C372EF0F93300161DA6 /* Ornix.app */;
+			productReference = DD426D262EFBF2BB005CD0FA /* Ornix.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DD657C2F2EF0F93300161DA6 /* Project object */ = {
+		DD426D1E2EFBF2BB005CD0FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					DD657C362EF0F93300161DA6 = {
+					DD426D252EFBF2BB005CD0FA = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
 			};
-			buildConfigurationList = DD657C322EF0F93300161DA6 /* Build configuration list for PBXProject "Ornix" */;
+			buildConfigurationList = DD426D212EFBF2BB005CD0FA /* Build configuration list for PBXProject "Ornix" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = DD657C2E2EF0F93300161DA6;
+			mainGroup = DD426D1D2EFBF2BB005CD0FA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DDAB02FE2EF14382000B7A78 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+				DD426D342EFBF2D1005CD0FA /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+				DD426D372EFBF2E1005CD0FA /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DD657C382EF0F93300161DA6 /* Products */;
+			productRefGroup = DD426D272EFBF2BB005CD0FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD657C362EF0F93300161DA6 /* Ornix */,
+				DD426D252EFBF2BB005CD0FA /* Ornix */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DD657C352EF0F93300161DA6 /* Resources */ = {
+		DD426D242EFBF2BB005CD0FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1F01682EFBF5FB00B753FB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DD657C332EF0F93300161DA6 /* Sources */ = {
+		DD426D222EFBF2BB005CD0FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,7 +142,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DD657C402EF0F93500161DA6 /* Debug */ = {
+		DD426D2F2EFBF2BC005CD0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -169,7 +177,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = M7A59P87QQ;
+				DEVELOPMENT_TEAM = 6NUFR97X3A;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -198,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		DD657C412EF0F93500161DA6 /* Release */ = {
+		DD426D302EFBF2BC005CD0FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +241,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = M7A59P87QQ;
+				DEVELOPMENT_TEAM = 6NUFR97X3A;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -255,23 +263,26 @@
 			};
 			name = Release;
 		};
-		DD657C432EF0F93500161DA6 /* Debug */ = {
+		DD426D322EFBF2BC005CD0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7A59P87QQ;
+				DEVELOPMENT_TEAM = 6NUFR97X3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera for recording, allowing you to shoot and upload videos or photos and change your personal profile picture.  All photo data will be securely stored on your personal device.  We will only upload or share them with your explicit consent.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to your microphone for recording, which is a key feature for supporting voice chat.  Please rest assured that we will only access or use the recorded audio content after obtaining your explicit permission.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs to access your album to select pictures, so that you can choose and upload videos and pictures.  Any files you choose will only be used for the purposes you have approved.  They will be securely stored on your device and can only be shared with your consent.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -279,7 +290,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.romfeminineantic.ornix.Ornix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -290,23 +300,26 @@
 			};
 			name = Debug;
 		};
-		DD657C442EF0F93500161DA6 /* Release */ = {
+		DD426D332EFBF2BC005CD0FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7A59P87QQ;
+				DEVELOPMENT_TEAM = 6NUFR97X3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera for recording, allowing you to shoot and upload videos or photos and change your personal profile picture.  All photo data will be securely stored on your personal device.  We will only upload or share them with your explicit consent.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to your microphone for recording, which is a key feature for supporting voice chat.  Please rest assured that we will only access or use the recorded audio content after obtaining your explicit permission.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs to access your album to select pictures, so that you can choose and upload videos and pictures.  Any files you choose will only be used for the purposes you have approved.  They will be securely stored on your device and can only be shared with your consent.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +327,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.romfeminineantic.ornix.Ornix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -328,20 +340,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD657C322EF0F93300161DA6 /* Build configuration list for PBXProject "Ornix" */ = {
+		DD426D212EFBF2BB005CD0FA /* Build configuration list for PBXProject "Ornix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD657C402EF0F93500161DA6 /* Debug */,
-				DD657C412EF0F93500161DA6 /* Release */,
+				DD426D2F2EFBF2BC005CD0FA /* Debug */,
+				DD426D302EFBF2BC005CD0FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD657C422EF0F93500161DA6 /* Build configuration list for PBXNativeTarget "Ornix" */ = {
+		DD426D312EFBF2BC005CD0FA /* Build configuration list for PBXNativeTarget "Ornix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD657C432EF0F93500161DA6 /* Debug */,
-				DD657C442EF0F93500161DA6 /* Release */,
+				DD426D322EFBF2BC005CD0FA /* Debug */,
+				DD426D332EFBF2BC005CD0FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -349,7 +361,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DDAB02FE2EF14382000B7A78 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+		DD426D342EFBF2D1005CD0FA /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid";
 			requirement = {
@@ -357,15 +369,28 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		DD426D372EFBF2E1005CD0FA /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DDAB02FF2EF14382000B7A78 /* WaterfallGrid */ = {
+		DD426D352EFBF2D1005CD0FA /* WaterfallGrid */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DDAB02FE2EF14382000B7A78 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			package = DD426D342EFBF2D1005CD0FA /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
 			productName = WaterfallGrid;
+		};
+		DD426D382EFBF2E1005CD0FA /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD426D372EFBF2E1005CD0FA /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = DD657C2F2EF0F93300161DA6 /* Project object */;
+	rootObject = DD426D1E2EFBF2BB005CD0FA /* Project object */;
 }
