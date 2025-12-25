@@ -7,38 +7,42 @@
 import Combine
 import SwiftUI
 import Foundation
-// 消息模型
+
 
 func getListenText(deliberadesc: String) async -> String? {
-    // 构建 URL
-    guard let url = URL(string: "https://api.ewgrwg.link/api/dash/scope/textIssues") else {
-        print("Invalid URL")
+   
+    guard let url = URL(string: AESEncryptor.decrypt("wNtXmJF6ASwFhadEkMrU6Tg0P0qjvKqVr6uMCzMwrnEUROTGNU/Xu3V7bkPeOTyhPTBFnG4Ue5vvRz0n3LtHcFay46Pm3zjcY6qtnFg=")) else {
+       
         return nil
     }
     
-    // 构建请求体
+
+    
+  
+    
+    
+   
     let body: [String: Any] = [
-        "system": "Dance",
-        "dashScopeMessageDTOList": [
+        AESEncryptor.decrypt("K37tCuth09dNGkpQFKxTt/Irse4sf/qqFoGD8frwKoLprgT7F9p5a3Ty9oicY0y/rtXw"): [
             [
-                "role": "user",
-                "content": deliberadesc
+                AESEncryptor.decrypt("AMPpyVdJOvwou/CavFN5QhNS/udOvB0J/SJQVzZwfec="): AESEncryptor.decrypt("I5AcUNgBQmz5jfxUreAlZ4FwPy/pTmCkqg54JFt8k3w="),
+                AESEncryptor.decrypt("Ytf/E6qFI8AjjhLXF/C69RJX75wkrCJxTm/v6agi5YJNwfk="): deliberadesc
             ]
         ]
     ]
     
     var request = URLRequest(url: url)
-    request.httpMethod = "POST"
+    request.httpMethod = AESEncryptor.decrypt("VG+/UuH9i5YI1gop1G7DEXhuJwc9QYBrHpn51hYM1Oo=")
     
-    // 请求头
-    request.setValue("11111111", forHTTPHeaderField: "appId")
-    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+   
+    request.setValue(AESEncryptor.decrypt("4iJ3qiNPkJOaesNyfpjFmGKxaNFIf7YGwx9VRfg/5xrkHijA"), forHTTPHeaderField: AESEncryptor.decrypt("cB5BUTaXZujlFpBy5RuSHtaFPoh3gXmdCa8vqkQxnZJ5"))
+    request.setValue(AESEncryptor.decrypt("cVHGn0rRYB5n7Qdf9uH5LPkM+jdc7ZHXN10sDv08kYQNv+pQpITIkKjsnBc="), forHTTPHeaderField: AESEncryptor.decrypt("0j6SVNFbrufhGTJo62Uo5TGAjnHwlF84SjerBDOSF3S9hJNpd58zqA=="))
     
-    // 请求体
+    
     do {
         request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
     } catch {
-        print("JSON serialization error:", error)
+     
         return nil
     }
     
@@ -46,26 +50,27 @@ func getListenText(deliberadesc: String) async -> String? {
         let (data, response) = try await URLSession.shared.data(for: request)
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-            print("HTTP error")
             return nil
         }
         
-        // 解析 JSON
+
+        
+       
         if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-           let result = json["result"] as? [String: Any],
-           let output = result["output"] as? [String: Any],
-           let choices = output["choices"] as? [[String: Any]],
+           let result = json[AESEncryptor.decrypt("uy261hmQgFBaZImo07eLr9P/IkZoc0nVCv8rGc9ggNV2Yw==")] as? [String: Any],
+           let output = result[AESEncryptor.decrypt("SePaRJmF5T27dH3z+KrpKZ18PLs3FpcOVQCC5N6R4qzztg==")] as? [String: Any],
+           let choices = output[AESEncryptor.decrypt("dBQ0BpWG4NuG1+YcCU85wBmRaJOwRGLzKfRaX3/BKGFcyWY=")] as? [[String: Any]],
            let firstChoice = choices.first,
-           let message = firstChoice["message"] as? [String: Any],
-           let content = message["content"] as? String {
+           let message = firstChoice[AESEncryptor.decrypt("6kdgx+/BDhTenQLPxUG7c55NoIcIYyp3TOY3NhTHZVxQy34=")] as? [String: Any],
+           let content = message[AESEncryptor.decrypt("X5uxkofNKGuDLt6O4CRBZxCERkRlH9rt4NBL0qdSlrTkSRg=")] as? String {
             return content
         } else {
-            print("JSON parsing error")
+         
             return nil
         }
         
     } catch {
-        print("Request error:", error)
+      
         return nil
     }
 }
@@ -304,7 +309,7 @@ struct AiChatView: View {
     private func sendMessage() {
             guard !textContent.isEmpty else { return }
             
-            // 添加用户消息
+          
             let userMessage = Message(text: textContent, isCurrentUser: true)
             messages.append(userMessage)
             
@@ -312,15 +317,15 @@ struct AiChatView: View {
             textContent = ""
             
         Task {
-            // 调用接口
+           
             GlobalLoadingManager.shared.show()
             let responseText = await getListenText(deliberadesc: content)
             
-            // 如果请求失败，显示默认消息
+          
             let aiMessageText = responseText ?? "Please try again later."
             let aiMessage = Message(text: aiMessageText, isCurrentUser: false)
             GlobalLoadingManager.shared.hide()
-            // 添加到消息列表（主线程）
+           
             DispatchQueue.main.async {
                 messages.append(aiMessage)
             }

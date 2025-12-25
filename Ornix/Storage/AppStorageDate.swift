@@ -39,10 +39,10 @@ final class AppStorageManager {
             PolishedUser(
                 refinedUid: 1,
                 elegantName: "Klein",
-                accentingCoin: 0,
+                accentingCoin: 11600,
                 pairingAvatar: "iuasdwqu1",
-                anchoringEmail: "qwe",
-                crystalsPassword: "123",
+                anchoringEmail: "klein@gmail.com",
+                crystalsPassword: "123456",
                 platinumBlock: [],
                 centeringFollow: [5],
                 stylingFans: [2]

@@ -24,16 +24,16 @@ struct WalletView: View {
     @State private var sticateCoin = 0
     
     let chbohoicCoin: [BohemianCoin] = [
-        BohemianCoin(complemNum: 400, raamberlMeiy: 0.99, braceletKey: "lvbsvhxcgcrvesor"),
-        BohemianCoin(complemNum: 800, raamberlMeiy: 1.99, braceletKey: ""),
-        BohemianCoin(complemNum: 2450, raamberlMeiy: 4.99, braceletKey: "dxismgcwewhrtezo"),
-        BohemianCoin(complemNum: 3950, raamberlMeiy: 7.99, braceletKey: ""),
-        BohemianCoin(complemNum: 4900, raamberlMeiy: 9.99, braceletKey: ""),
-        BohemianCoin(complemNum: 9800, raamberlMeiy: 19.99, braceletKey: ""),
-        BohemianCoin(complemNum: 17400, raamberlMeiy: 34.99, braceletKey: ""),
-        BohemianCoin(complemNum: 24500, raamberlMeiy: 49.99, braceletKey: ""),
-        BohemianCoin(complemNum: 34500, raamberlMeiy: 69.99, braceletKey: ""),
-        BohemianCoin(complemNum: 49000, raamberlMeiy: 99.99, braceletKey: ""),
+        BohemianCoin(complemNum: 400, raamberlMeiy: 0.99, braceletKey: "olijqkcoepicfpua"),
+        BohemianCoin(complemNum: 800, raamberlMeiy: 1.99, braceletKey: "ufxyohiyworlqaed"),
+        BohemianCoin(complemNum: 2450, raamberlMeiy: 4.99, braceletKey: "apqilufmkxxbtjzm"),
+        BohemianCoin(complemNum: 3950, raamberlMeiy: 7.99, braceletKey: "bwhsyzplkvnquorx"),
+        BohemianCoin(complemNum: 4900, raamberlMeiy: 9.99, braceletKey: "qafbqxircsraksjl"),
+        BohemianCoin(complemNum: 9800, raamberlMeiy: 19.99, braceletKey: "wjxjoizjinfyrztp"),
+        BohemianCoin(complemNum: 17400, raamberlMeiy: 34.99, braceletKey: "cvhqxftmjrlwyuen"),
+        BohemianCoin(complemNum: 24500, raamberlMeiy: 49.99, braceletKey: "tdkwgdgmkgvvoyta"),
+        BohemianCoin(complemNum: 34500, raamberlMeiy: 69.99, braceletKey: "dxjrzgkvsmpyutin"),
+        BohemianCoin(complemNum: 49000, raamberlMeiy: 99.99, braceletKey: "avgryfskizmviumj"),
     ]
     
     

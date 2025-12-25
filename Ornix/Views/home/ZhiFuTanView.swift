@@ -72,7 +72,7 @@ struct ZhiFuTanView: View {
                                     blue: 96 / 255,
                                     opacity: 1
                                 ))
-                            Text("200")
+                            Text("300")
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(Color(
                                     red: 237 / 255,
