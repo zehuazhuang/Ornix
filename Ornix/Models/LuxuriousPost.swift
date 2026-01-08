@@ -1,9 +1,4 @@
-//
-//  LuxuriousPost.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/19.
-//
+
 
 struct LuxuriousPost: Codable {
     var matchingPid: Int

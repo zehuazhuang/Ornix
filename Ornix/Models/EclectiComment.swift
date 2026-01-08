@@ -1,9 +1,4 @@
-//
-//  EclectiComment.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/22.
-//
+
 
 struct EclectiComment: Codable {
     var curatingCid: Int

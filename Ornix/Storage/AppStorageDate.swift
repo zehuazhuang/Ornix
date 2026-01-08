@@ -1,14 +1,9 @@
-//
-//  AppStorageDate.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
+
 
 import Foundation
 import SwiftUI
 
-/// 管理所有 AppStorageCodable 初始化数据
+
 final class AppStorageManager {
 
     static let shared = AppStorageManager()

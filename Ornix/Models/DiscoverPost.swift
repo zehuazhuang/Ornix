@@ -1,9 +1,4 @@
-//
-//  DiscoverPost.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/22.
-//
+
 
 struct DiscoverPost: Codable {
     var glamorousPid: Int

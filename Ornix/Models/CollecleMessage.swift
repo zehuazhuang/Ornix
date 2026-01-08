@@ -1,9 +1,4 @@
-//
-//  CollecleMessage.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/23.
-//
+
 
 struct CollecleMessage: Identifiable, Codable {
     var ornamentMid: Int

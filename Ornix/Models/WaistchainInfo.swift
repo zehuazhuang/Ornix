@@ -1,9 +1,4 @@
-//
-//  WaistchainInfo.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/23.
-//
+
 
 struct WaistchainInfo: Codable {
     var ginframinId: Int

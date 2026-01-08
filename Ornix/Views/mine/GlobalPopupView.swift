@@ -1,9 +1,4 @@
-//
-//  GlobalPopupView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/23.
-//
+
 
 import SwiftUI
 

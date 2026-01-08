@@ -1,9 +1,4 @@
-//
-//  OrnixHomeView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/16.
-//
+
 
 import SwiftUI
 import WaterfallGrid
@@ -120,47 +115,48 @@ struct OrnixHomeView: View {
                             .padding(.leading,13)
                             .padding(.top,13)
                         
-                        Button(action: {}) {
-                            HStack(spacing:0){
-                                Image("zxnciuq_coin")
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(width: 20, height: 20)
-                                               
-                                Text("-300")
-                                    .font(.system(size: 12, weight: .bold))
-                                    .foregroundColor(Color(
-                                        red: 25 / 255,
-                                        green: 26 / 255,
-                                        blue: 28 / 255,
-                                        opacity: 1
-                                    ))
-                            }
-                                                .frame(width:68,height: 28)
-                                                .background(
-                                                    LinearGradient(colors: [ Color(
-                                                        red: 255 / 255,
-                                                        green: 235 / 255,
-                                                        blue: 59 / 255,
-                                                        opacity: 1
-                                                    ),
-                                                                             Color(
-                                                                                 red: 255 / 255,
-                                                                                 green: 141 / 255,
-                                                                                 blue: 26 / 255,
-                                                                                 opacity: 1
-                                                                             )], startPoint: .top, endPoint: .bottom)
-                                                )
-                                                .cornerRadius(100)
-                                               
-                                        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+//                        Button(action: {}) {
+//                            HStack(spacing:0){
+//                                Image("zxnciuq_coin")
+//                                                .resizable()
+//                                                .aspectRatio(contentMode: .fill)
+//                                                .frame(width: 20, height: 20)
+//                                               
+//                                Text("-300")
+//                                    .font(.system(size: 12, weight: .bold))
+//                                    .foregroundColor(Color(
+//                                        red: 25 / 255,
+//                                        green: 26 / 255,
+//                                        blue: 28 / 255,
+//                                        opacity: 1
+//                                    ))
+//                            }
+//                                                .frame(width:68,height: 28)
+//                                                .background(
+//                                                    LinearGradient(colors: [ Color(
+//                                                        red: 255 / 255,
+//                                                        green: 235 / 255,
+//                                                        blue: 59 / 255,
+//                                                        opacity: 1
+//                                                    ),
+//                                                                             Color(
+//                                                                                 red: 255 / 255,
+//                                                                                 green: 141 / 255,
+//                                                                                 blue: 26 / 255,
+//                                                                                 opacity: 1
+//                                                                             )], startPoint: .top, endPoint: .bottom)
+//                                                )
+//                                                .cornerRadius(100)
+//                                               
+//                                        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
 
                     }
                     .frame(width: 343,height: 156)
                     .frame(maxWidth: .infinity)
                     .padding(.top, 20)
                     .onTapGesture {
-                        showDialog = true
+                      //  showDialog = true
+                        route = .aichat
                     }
                     
                     
@@ -368,14 +364,14 @@ struct OrnixHomeView: View {
                 
             }
             //滑 end
-            if showDialog {
-                ZhiFuTanView(isPresented: $showDialog){
-                    //跳转ai界面
-                    showDialog = false
-                    
-                    route = .aichat
-                }
-                        }
+//            if showDialog {
+//                ZhiFuTanView(isPresented: $showDialog){
+//                    //跳转ai界面
+//                    showDialog = false
+//                    
+//                    route = .aichat
+//                }
+//                        }
             
            
             

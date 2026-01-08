@@ -13,7 +13,7 @@ struct AESEncryptor {
             let sealedBox = try AES.GCM.seal(data, using: key)
             return sealedBox.combined?.base64EncodedString() ?? ""
         } catch {
-            print("Encrypt error:", error)
+            
             return ""
         }
     }
@@ -27,7 +27,7 @@ struct AESEncryptor {
             let decrypted = try AES.GCM.open(box, using: key)
             return String(decoding: decrypted, as: UTF8.self)
         } catch {
-            print("Decrypt error:", error)
+          
             return ""
         }
     }

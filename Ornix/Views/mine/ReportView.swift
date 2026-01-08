@@ -1,9 +1,3 @@
-//
-//  ReportView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
 
 import SwiftUI
 

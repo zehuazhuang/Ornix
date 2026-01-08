@@ -1,9 +1,4 @@
-//
-//  DiscoverView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
+
 
 import SwiftUI
 
@@ -26,7 +21,7 @@ enum DiscoverRoute: Identifiable {
 struct DiscoverView: View {
     @State private var route: DiscoverRoute?
     
-    @State private var selected: String = "All" // 当前选中
+    @State private var selected: String = "All"
     
     let width: CGFloat = 343
     let height: CGFloat = 44

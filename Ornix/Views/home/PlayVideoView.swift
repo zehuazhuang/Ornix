@@ -1,9 +1,3 @@
-//
-//  PlayVideoView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
 
 import SwiftUI
 import AVKit
@@ -133,11 +127,11 @@ struct PlayVideoView: View {
         ZStack{
         
             
-            //替换成视频
+            
             ZStack {
                 LoopingVideoPlayerView(videoSource: sophidPost.titaniumUrl ,  isPlaying: $isPlaying)
                         
-                        // 点击切换播放状态
+                        
                         Color.clear
                             .contentShape(Rectangle())
                             .onTapGesture {

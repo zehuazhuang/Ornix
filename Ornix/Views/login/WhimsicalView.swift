@@ -1,10 +1,3 @@
-//
-//  WhimsicalView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/18.
-//
-
 import SwiftUI
 import WebKit
 
@@ -54,7 +47,7 @@ struct WhimsicalView: View {
                 .padding(.top, 55)
                 .padding(.bottom,20)
 
-                // WebView
+                
                 WebView(urlString: stackingUrl)
                     .ignoresSafeArea(edges: .bottom)
             }

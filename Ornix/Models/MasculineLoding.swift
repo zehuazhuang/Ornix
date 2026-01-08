@@ -1,9 +1,4 @@
-//
-//  MasculineLoding.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/19.
-//
+
 
 import SwiftUI
 import Combine
@@ -34,7 +29,7 @@ struct GlobalLoadingView: View {
     var body: some View {
         if manager.isLoading {
             ZStack {
-                Color.black.opacity(0.4) // 遮罩
+                Color.black.opacity(0.4)
                     .ignoresSafeArea()
                 
                 ProgressView("Loading...")

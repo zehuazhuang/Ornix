@@ -1,9 +1,4 @@
-//
-//  AiChatView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/16.
-//
+
 import Combine
 import SwiftUI
 import Foundation
@@ -122,9 +117,7 @@ struct AiChatView: View {
                         
                     }
                     Spacer()
-//                    Image("zxicbq_jub")
-//                                    .resizable()
-//                                    .frame(width: 36, height: 36)
+
                                    
                 }.padding(.horizontal,16)
                     .padding(.top,5)

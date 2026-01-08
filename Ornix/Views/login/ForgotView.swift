@@ -1,9 +1,4 @@
-//
-//  ForgotView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/16.
-//
+
 
 
 
@@ -62,7 +57,7 @@ struct ForgotView: View {
                 
                             ScrollView {
                                 VStack(alignment:.leading) {
-                                    //按钮
+                                   
                                     Text("Forgot password")
                                         .font(.system(size: 24, weight: .bold))
                                         .foregroundColor(Color(
@@ -173,7 +168,7 @@ struct ForgotView: View {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
             }.padding()
         }.onTapGesture {
-            focusedField = nil // 点击空白收起键盘
+            focusedField = nil
         }
         
     
@@ -182,6 +177,3 @@ struct ForgotView: View {
     }
 }
 
-#Preview {
-    ForgotView()
-}

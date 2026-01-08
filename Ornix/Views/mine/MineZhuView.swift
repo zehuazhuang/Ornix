@@ -1,16 +1,11 @@
-//
-//  MineZhuView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
+
 
 import SwiftUI
 import WaterfallGrid
 
 enum MineZhuRoute: Identifiable {
     case setting 
-    case wallet
+ //   case wallet
     case playvideo(post: LuxuriousPost)
     case priChat(chatId: Int)
     
@@ -20,7 +15,7 @@ enum MineZhuRoute: Identifiable {
     var id: Int {
         switch self {
         case .setting: return 0
-        case .wallet: return 999
+   //     case .wallet: return 999
         case .playvideo(let post): return post.matchingPid
         case .priChat(let chatId): return chatId
          }
@@ -162,55 +157,55 @@ struct MineZhuView: View {
                         HStack(spacing:15){
                             
                             if romanticIs&&AppStorageManager.shared.getCurrentUserId()==vintageUid {
-                                Button(action: {
-                                    route = .wallet
-                                }) {
-                                ZStack{
-                                    RoundedRectangle(cornerRadius: 15)
-                                        .fill(
-                                            Color(
-                                                red: 237 / 255,
-                                                green: 55 / 255,
-                                                blue: 251 / 255,
-                                                opacity: 1
-                                        ))
-                                    HStack{
-                                        Image("zucbqu_dajin")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fill)
-                                                        .frame(width: 46, height: 46)
-                                        
-                                        VStack(alignment:.leading){
-                                            Text("\(delicateUser?.accentingCoin ?? 0)")
-                                                .font(.system(size: 20, weight: .black))
-                                                .foregroundColor(.white)
-                                            Text("Balance")
-                                                .font(.system(size: 12, weight: .regular))
-                                                .foregroundColor(.white.opacity(0.5))
-                                        }
-                                        Spacer()
-                                        
-                                        ZStack{
-                                            RoundedRectangle(cornerRadius: 100)
-                                                .fill(
-                                                    Color(
-                                                        red: 3 / 255,
-                                                        green: 0 / 255,
-                                                        blue: 3 / 255,
-                                                        opacity: 1
-                                                ))
-                                            Text("Recharge")
-                                                .font(.system(size: 10, weight: .medium))
-                                                .foregroundColor(.white)
-                                            
-                                        }.frame(width: 82,height: 33)
-                                    }.padding( .horizontal,16)
-                                        .padding(.vertical,5)
-                                }
-                                    .frame(height: 56)
-                                    .frame(maxWidth: .infinity)
-                                }
-                                .padding(.horizontal,16)
+//                                Button(action: {
+//                                    route = .wallet
+//                                }) {
+//                                ZStack{
+//                                    RoundedRectangle(cornerRadius: 15)
+//                                        .fill(
+//                                            Color(
+//                                                red: 237 / 255,
+//                                                green: 55 / 255,
+//                                                blue: 251 / 255,
+//                                                opacity: 1
+//                                        ))
+//                                    HStack{
+//                                        Image("zucbqu_dajin")
+//                                                        .resizable()
+//                                                        .aspectRatio(contentMode: .fill)
+//                                                        .frame(width: 46, height: 46)
+//                                        
+//                                        VStack(alignment:.leading){
+//                                            Text("\(delicateUser?.accentingCoin ?? 0)")
+//                                                .font(.system(size: 20, weight: .black))
+//                                                .foregroundColor(.white)
+//                                            Text("Balance")
+//                                                .font(.system(size: 12, weight: .regular))
+//                                                .foregroundColor(.white.opacity(0.5))
+//                                        }
+//                                        Spacer()
+//                                        
+//                                        ZStack{
+//                                            RoundedRectangle(cornerRadius: 100)
+//                                                .fill(
+//                                                    Color(
+//                                                        red: 3 / 255,
+//                                                        green: 0 / 255,
+//                                                        blue: 3 / 255,
+//                                                        opacity: 1
+//                                                ))
+//                                            Text("Recharge")
+//                                                .font(.system(size: 10, weight: .medium))
+//                                                .foregroundColor(.white)
+//                                            
+//                                        }.frame(width: 82,height: 33)
+//                                    }.padding( .horizontal,16)
+//                                        .padding(.vertical,5)
+//                                }
+//                                    .frame(height: 56)
+//                                    .frame(maxWidth: .infinity)
+//                                }
+//                                .padding(.horizontal,16)
 
                             }else{
                                 Button(action:{
@@ -360,8 +355,8 @@ struct MineZhuView: View {
                     let users = AppStorageManager.shared.getUsers()
                     delicateUser = users.first { $0.refinedUid == vintageUid }
                 })
-            case .wallet:
-                WalletView()
+//            case .wallet:
+//                WalletView()
             case .playvideo(let post):
                 PlayVideoView(sophidPost: post)
             case .priChat(let chatId):

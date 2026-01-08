@@ -1,9 +1,4 @@
-//
-//  PolishedUser.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
+
 
 struct PolishedUser: Codable {
     var refinedUid: Int

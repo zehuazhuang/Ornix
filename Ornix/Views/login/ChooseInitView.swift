@@ -1,9 +1,4 @@
-//
-//  ChooseInitView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/16.
-//
+
 
 import SwiftUI
 
@@ -195,6 +190,4 @@ struct ChooseInitView: View {
     }
 }
 
-#Preview {
-    ChooseInitView()
-}
+

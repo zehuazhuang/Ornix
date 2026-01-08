@@ -1,9 +1,4 @@
-//
-//  UploadVideoView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
+
 
 import SwiftUI
 import PhotosUI
@@ -153,8 +148,6 @@ struct UploadShiView: View {
                             PermissionManager.checkPhotoPermission { granted in
                                 if granted {
                                     showPicker = true
-                                } else {
-                                    print("相册权限被拒绝")
                                 }
                             }
                         }.photosPicker(
@@ -162,7 +155,7 @@ struct UploadShiView: View {
                             selection: $selectedItem,
                             matching: .videos
                         )
-                    // 选中视频后处理
+                    
                         .onChange(of: selectedItem) { newItem in
                             guard let item = newItem else { return }
                             
@@ -232,13 +225,13 @@ struct UploadShiView: View {
     
     func extractFirstFrame(from url: URL) {
 
-        // ① 先保存视频
+       
         if let savedURL = saveVideoToDocuments(from: url) {
-            print("视频已保存:", savedURL.path)
-            self.savedVideoURL = savedURL   // 建议保存
+            print("save:", savedURL.path)
+            self.savedVideoURL = savedURL
         }
 
-        // ② 再取第一帧
+       
         let asset = AVAsset(url: url)
         let generator = AVAssetImageGenerator(asset: asset)
         generator.appliesPreferredTrackTransform = true
@@ -253,7 +246,7 @@ struct UploadShiView: View {
                 self.firstFrameImage = image
             }
         } catch {
-            print("获取视频第一帧失败:", error)
+            print("error:", error)
         }
     }
     
@@ -288,7 +281,7 @@ struct UploadShiView: View {
             try fileManager.copyItem(at: sourceURL, to: targetURL)
             return targetURL
         } catch {
-            print("保存视频失败:", error)
+           
             return nil
         }
     }

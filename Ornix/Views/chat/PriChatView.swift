@@ -1,14 +1,5 @@
-//
-//  PriChatView.swift
-//  Ornix
-//
-//  Created by yangyang on 2025/12/17.
-//
-
-
-
 import SwiftUI
-// 消息模型
+
 
 
 struct PriChatView: View {
