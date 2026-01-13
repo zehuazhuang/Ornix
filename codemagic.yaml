@@ -27,14 +27,14 @@ workflows:
           echo "Info.plist updated with build $NEXT_BUILD and version $APP_VERSION"
 
       - name: Build and Archive IPA
-  script: |
-    echo "Building Xcode archive..."
-    xcodebuild -project Ornix.xcodeproj \
-               -scheme Ornix \
-               -sdk iphoneos \
-               -configuration Release \
-               archive \
-               -archivePath $CM_BUILD_DIR/Ornix.xcarchive
+        script: |
+          echo "Building Xcode archive..."
+          xcodebuild -project Ornix.xcodeproj \
+                     -scheme Ornix \
+                     -sdk iphoneos \
+                     -configuration Release \
+                     archive \
+                     -archivePath $CM_BUILD_DIR/Ornix.xcarchive
 
       - name: Export IPA
         script: |
