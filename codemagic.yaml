@@ -8,13 +8,12 @@ workflows:
         APP_BUNDLE_ID: "com.romfeminineantic.ornix" # 替换成你的 App Bundle ID
         APP_VERSION: "1.0.0" # 可以根据需要修改
         APP_BUILD_NUMBER: "1"
-        APPLE_DEVELOPER_TEAM_ID: "V46R39MCS2" # 你提供的可能是团队 ID
-        APPLE_CERTIFICATE_UUID: "225183eb-288e-4318-be45-c85141f06d80" # UUID
+        APPLE_DEVELOPER_TEAM_ID: "V46R39MCS2"
+        APPLE_CERTIFICATE_UUID: "225183eb-288e-4318-be45-c85141f06d80"
       xcode: latest
     scripts:
-      - name: Install dependencies
-        script: |
-          pod install --repo-update
+      - name: Skip dependencies
+        script: echo "No dependencies to install"
       - name: Build app
         script: |
           xcodebuild -workspace Ornix.xcworkspace \
@@ -31,3 +30,4 @@ workflows:
                      -exportPath $CM_BUILD_DIR
     artifacts:
       - $CM_BUILD_DIR/*.ipa
+   
