@@ -11,7 +11,6 @@
 		DD426D362EFBF2D1005CD0FA /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = DD426D352EFBF2D1005CD0FA /* WaterfallGrid */; };
 		DD426D392EFBF2E1005CD0FA /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = DD426D382EFBF2E1005CD0FA /* AlertToast */; };
 		DDF76AFC2F1645A100984DB2 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF42F1645A100984DB2 /* .env */; };
-		DDF76AFD2F1645A100984DB2 /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AFA2F1645A100984DB2 /* report.xml */; };
 		DDF76AFE2F1645A100984DB2 /* Pluginfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF82F1645A100984DB2 /* Pluginfile */; };
 		DDF76AFF2F1645A100984DB2 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF52F1645A100984DB2 /* Appfile */; };
 		DDF76B002F1645A100984DB2 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF62F1645A100984DB2 /* Fastfile */; };
@@ -212,7 +211,6 @@
 				DD1F01682EFBF5FB00B753FB /* LaunchScreen.storyboard in Resources */,
 				DDF76AFC2F1645A100984DB2 /* .env in Resources */,
 				DDF76B042F16470100984DB2 /* AuthKey_V46R39MCS2.p8 in Resources */,
-				DDF76AFD2F1645A100984DB2 /* report.xml in Resources */,
 				DDF76B082F164CF500984DB2 /* Gemfile.lock in Resources */,
 				DDF76B092F164CF500984DB2 /* build.plist in Resources */,
 				DDF76B0A2F164CF500984DB2 /* Gemfile in Resources */,
