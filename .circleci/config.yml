@@ -4,6 +4,7 @@ jobs:
   build-and-upload:
     macos:
       xcode: "16.4.0"
+    resource_class: m4pro.medium
 
     environment:
       BUNDLE_PATH: vendor/bundle # Bundler 安装路径，方便缓存
@@ -12,13 +13,14 @@ jobs:
       LC_ALL: en_US.UTF-8
       LANG: en_US.UTF-8
       FASTLANE_USER: "wuxiaoqin19730312@icloud.com"
-      ASC_KEY_ID: "xejh-emge-ygbn-kajz"
-      ASC_ISSUER_ID: "V46R39MCS2"
-      ASC_KEY_CONTENT: "225183eb-288e-4318-be45-c85141f06d80"
-#     MATCH_PASSWORD: "${MATCH_PASSWORD}"
+      MATCH_PASSWORD: "1"
+      ASC_KEY_ID: "V46R39MCS2"
+      ASC_ISSUER_ID: "225183eb-288e-4318-be45-c85141f06d80"
+#     ASC_KEY_CONTENT: ""
+      TEAM_ID: "1"
       BUNDLE_ID: "com.romfeminineantic.ornix"
       EXPORT_METHOD: "app-store"
-      TEAM_ID: "5T89NM7KND"
+      
 
     steps:
       - checkout
@@ -50,7 +52,8 @@ jobs:
           name: Install Bundler & Gems
           command: |
             gem install bundler
-            bundle install --path vendor/bundle
+            bundle config set path 'vendor/bundle'
+            bundle install
 
       - save_cache:
           paths:

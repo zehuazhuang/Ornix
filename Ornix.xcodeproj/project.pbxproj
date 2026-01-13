@@ -18,6 +18,9 @@
 		DDF76B012F1645A100984DB2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF92F1645A100984DB2 /* README.md */; };
 		DDF76B022F1645A100984DB2 /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF72F1645A100984DB2 /* Matchfile */; };
 		DDF76B042F16470100984DB2 /* AuthKey_V46R39MCS2.p8 in Resources */ = {isa = PBXBuildFile; fileRef = DDF76B032F16470100984DB2 /* AuthKey_V46R39MCS2.p8 */; };
+		DDF76B082F164CF500984DB2 /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = DDF76B072F164CF500984DB2 /* Gemfile.lock */; };
+		DDF76B092F164CF500984DB2 /* build.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDF76B052F164CF500984DB2 /* build.plist */; };
+		DDF76B0A2F164CF500984DB2 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76B062F164CF500984DB2 /* Gemfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		DDF76AF92F1645A100984DB2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DDF76AFA2F1645A100984DB2 /* report.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
 		DDF76B032F16470100984DB2 /* AuthKey_V46R39MCS2.p8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = AuthKey_V46R39MCS2.p8; sourceTree = "<group>"; };
+		DDF76B052F164CF500984DB2 /* build.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = build.plist; sourceTree = "<group>"; };
+		DDF76B062F164CF500984DB2 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		DDF76B072F164CF500984DB2 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -74,6 +80,9 @@
 				DD1F01672EFBF5FB00B753FB /* LaunchScreen.storyboard */,
 				DDF76AFB2F1645A100984DB2 /* fastlane */,
 				DDF76B032F16470100984DB2 /* AuthKey_V46R39MCS2.p8 */,
+				DDF76B052F164CF500984DB2 /* build.plist */,
+				DDF76B062F164CF500984DB2 /* Gemfile */,
+				DDF76B072F164CF500984DB2 /* Gemfile.lock */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +200,9 @@
 				DDF76AFC2F1645A100984DB2 /* .env in Resources */,
 				DDF76B042F16470100984DB2 /* AuthKey_V46R39MCS2.p8 in Resources */,
 				DDF76AFD2F1645A100984DB2 /* report.xml in Resources */,
+				DDF76B082F164CF500984DB2 /* Gemfile.lock in Resources */,
+				DDF76B092F164CF500984DB2 /* build.plist in Resources */,
+				DDF76B0A2F164CF500984DB2 /* Gemfile in Resources */,
 				DDF76AFE2F1645A100984DB2 /* Pluginfile in Resources */,
 				DDF76AFF2F1645A100984DB2 /* Appfile in Resources */,
 				DDF76B002F1645A100984DB2 /* Fastfile in Resources */,
