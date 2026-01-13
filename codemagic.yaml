@@ -35,7 +35,9 @@ workflows:
                      -configuration Release \
                      archive \
                      -archivePath $CM_BUILD_DIR/Ornix.xcarchive \
-                     -allowProvisioningUpdates
+                     -allowProvisioningUpdates \
+                     DEVELOPMENT_TEAM=V46R39MCS2 \
+                     CODE_SIGN_STYLE=Automatic
 
       - name: Export IPA
         script: |
