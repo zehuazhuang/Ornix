@@ -72,4 +72,4 @@ workflows:
           filters:
             branches:
               only:
-                - release # 或你指定的发布分支，如 release/production
+                - pre # 或你指定的发布分支，如 release/production
