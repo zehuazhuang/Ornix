@@ -58,9 +58,3 @@ workflows:
 
     artifacts:
       - $CM_BUILD_DIR/*.ipa
-      - /tmp/xcodebuild_logs/*.log
-
-    publishing:
-      email:
-        recipients:
-          - your@email.com
