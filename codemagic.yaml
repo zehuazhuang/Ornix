@@ -9,7 +9,6 @@ workflows:
         APP_VERSION: "1.0.0"
         APP_BUILD_NUMBER: "1"
         APPLE_DEVELOPER_TEAM_ID: "V46R39MCS2"
-        APPLE_CERTIFICATE_UUID: "225183eb-288e-4318-be45-c85141f06d80"
       xcode: latest
     scripts:
       - name: Skip dependencies
@@ -20,7 +19,8 @@ workflows:
                      -scheme Ornix \
                      -configuration Release \
                      -sdk iphoneos \
-                     -archivePath $CM_BUILD_DIR/Ornix.xcarchive archive \
+                     -archivePath $CM_BUILD_DIR/Ornix.xcarchive \
+                     -allowProvisioningUpdates \
                      DEVELOPMENT_TEAM=$APPLE_DEVELOPER_TEAM_ID
       - name: Export IPA
         script: |
