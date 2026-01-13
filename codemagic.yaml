@@ -8,11 +8,14 @@ workflows:
         APP_BUNDLE_ID: "com.romfeminineantic.ornix"
         APP_VERSION: "1.0.0"
         APP_BUILD_NUMBER: "1"
-        APPLE_DEVELOPER_TEAM_ID: "V46R39MCS2"
+        APPLE_DEVELOPER_TEAM_ID: "V46R39MCS2"  # 你团队ID
       xcode: latest
     scripts:
+      # 跳过依赖安装，因为不使用 CocoaPods
       - name: Skip dependencies
         script: echo "No dependencies to install"
+
+      # 构建 Archive，使用手动签名
       - name: Build app
         script: |
           xcodebuild -project Ornix.xcodeproj \
@@ -20,13 +23,18 @@ workflows:
                      -configuration Release \
                      -sdk iphoneos \
                      -archivePath $CM_BUILD_DIR/Ornix.xcarchive \
-                     -allowProvisioningUpdates \
-                     DEVELOPMENT_TEAM=$APPLE_DEVELOPER_TEAM_ID
+                     DEVELOPMENT_TEAM=$APPLE_DEVELOPER_TEAM_ID \
+                     PROVISIONING_PROFILE_SPECIFIER="Ornix" \
+                     CODE_SIGN_IDENTITY="iPhone Distribution"
+
+      # 导出 IPA
       - name: Export IPA
         script: |
           xcodebuild -exportArchive \
                      -archivePath $CM_BUILD_DIR/Ornix.xcarchive \
                      -exportOptionsPlist ExportOptions.plist \
                      -exportPath $CM_BUILD_DIR
+
+    # 构建产物
     artifacts:
       - $CM_BUILD_DIR/*.ipa
