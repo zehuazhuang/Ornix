@@ -11,14 +11,14 @@ jobs:
 
       LC_ALL: en_US.UTF-8
       LANG: en_US.UTF-8
-      FASTLANE_USER=wuxiaoqin19730312@icloud.com
-      ASC_KEY_ID=xejh-emge-ygbn-kajz
-      ASC_ISSUER_ID=V46R39MCS2
-      ASC_KEY_CONTENT=225183eb-288e-4318-be45-c85141f06d80
+      FASTLANE_USER: "wuxiaoqin19730312@icloud.com"
+      ASC_KEY_ID: "xejh-emge-ygbn-kajz"
+      ASC_ISSUER_ID: "V46R39MCS2"
+      ASC_KEY_CONTENT: "225183eb-288e-4318-be45-c85141f06d80"
 #     MATCH_PASSWORD: "${MATCH_PASSWORD}"
-      BUNDLE_ID=com.romfeminineantic.ornix
-      EXPORT_METHOD=app-store
-      TEAM_ID=5T89NM7KND
+      BUNDLE_ID: "com.romfeminineantic.ornix"
+      EXPORT_METHOD: "app-store"
+      TEAM_ID: "5T89NM7KND"
 
     steps:
       - checkout
