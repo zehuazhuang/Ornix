@@ -9,6 +9,7 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.romfeminineantic.ornix
+        automatic_signing: true
       vars:
         APP_ID: 6757517049
         APP_VERSION: 1.0.0
