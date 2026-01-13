@@ -39,9 +39,22 @@
 		DDF76B072F164CF500984DB2 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DDF76B0B2F16576200984DB2 /* Exceptions for "Ornix" folder in "Ornix" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DD426D252EFBF2BB005CD0FA /* Ornix */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DD426D282EFBF2BB005CD0FA /* Ornix */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DDF76B0B2F16576200984DB2 /* Exceptions for "Ornix" folder in "Ornix" target */,
+			);
 			path = Ornix;
 			sourceTree = "<group>";
 		};
