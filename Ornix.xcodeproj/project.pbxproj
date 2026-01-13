@@ -10,39 +10,43 @@
 		DD1F01682EFBF5FB00B753FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1F01672EFBF5FB00B753FB /* LaunchScreen.storyboard */; };
 		DD426D362EFBF2D1005CD0FA /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = DD426D352EFBF2D1005CD0FA /* WaterfallGrid */; };
 		DD426D392EFBF2E1005CD0FA /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = DD426D382EFBF2E1005CD0FA /* AlertToast */; };
-		DD76E6452F162D3A0077AD71 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = DD76E6442F162D3A0077AD71 /* codemagic.yaml */; };
-		DDF76AEB2F162FDB00984DB2 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AEA2F162FDB00984DB2 /* ExportOptions.plist */; };
+		DDF76AFC2F1645A100984DB2 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF42F1645A100984DB2 /* .env */; };
+		DDF76AFD2F1645A100984DB2 /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AFA2F1645A100984DB2 /* report.xml */; };
+		DDF76AFE2F1645A100984DB2 /* Pluginfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF82F1645A100984DB2 /* Pluginfile */; };
+		DDF76AFF2F1645A100984DB2 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF52F1645A100984DB2 /* Appfile */; };
+		DDF76B002F1645A100984DB2 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF62F1645A100984DB2 /* Fastfile */; };
+		DDF76B012F1645A100984DB2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF92F1645A100984DB2 /* README.md */; };
+		DDF76B022F1645A100984DB2 /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = DDF76AF72F1645A100984DB2 /* Matchfile */; };
+		DDF76B042F16470100984DB2 /* AuthKey_V46R39MCS2.p8 in Resources */ = {isa = PBXBuildFile; fileRef = DDF76B032F16470100984DB2 /* AuthKey_V46R39MCS2.p8 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD1F01672EFBF5FB00B753FB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD426D262EFBF2BB005CD0FA /* Ornix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ornix.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD76E6442F162D3A0077AD71 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
-		DDF76AEA2F162FDB00984DB2 /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ExportOptions.plist; sourceTree = "<group>"; };
+		DDF76AF42F1645A100984DB2 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		DDF76AF52F1645A100984DB2 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		DDF76AF62F1645A100984DB2 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		DDF76AF72F1645A100984DB2 /* Matchfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
+		DDF76AF82F1645A100984DB2 /* Pluginfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
+		DDF76AF92F1645A100984DB2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DDF76AFA2F1645A100984DB2 /* report.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
+		DDF76B032F16470100984DB2 /* AuthKey_V46R39MCS2.p8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = AuthKey_V46R39MCS2.p8; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DDDA5E202EFCDE2A0053E6E3 /* Exceptions for "Ornix" folder in "Ornix" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = DD426D252EFBF2BB005CD0FA /* Ornix */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DD426D282EFBF2BB005CD0FA /* Ornix */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DDDA5E202EFCDE2A0053E6E3 /* Exceptions for "Ornix" folder in "Ornix" target */,
-			);
 			path = Ornix;
 			sourceTree = "<group>";
 		};
 		DDDA5E0F2EFCD39A0053E6E3 /* Videos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		DDF76AF02F16455E00984DB2 /* .circleci */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = .circleci;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -63,12 +67,13 @@
 		DD426D1D2EFBF2BB005CD0FA = {
 			isa = PBXGroup;
 			children = (
-				DDF76AEA2F162FDB00984DB2 /* ExportOptions.plist */,
+				DDF76AF02F16455E00984DB2 /* .circleci */,
 				DDDA5E0F2EFCD39A0053E6E3 /* Videos */,
 				DD426D282EFBF2BB005CD0FA /* Ornix */,
 				DD426D272EFBF2BB005CD0FA /* Products */,
 				DD1F01672EFBF5FB00B753FB /* LaunchScreen.storyboard */,
-				DD76E6442F162D3A0077AD71 /* codemagic.yaml */,
+				DDF76AFB2F1645A100984DB2 /* fastlane */,
+				DDF76B032F16470100984DB2 /* AuthKey_V46R39MCS2.p8 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +83,36 @@
 				DD426D262EFBF2BB005CD0FA /* Ornix.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DDF76AF22F1645A100984DB2 /* metadata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = metadata;
+			sourceTree = "<group>";
+		};
+		DDF76AF32F1645A100984DB2 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		DDF76AFB2F1645A100984DB2 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				DDF76AF22F1645A100984DB2 /* metadata */,
+				DDF76AF32F1645A100984DB2 /* screenshots */,
+				DDF76AF42F1645A100984DB2 /* .env */,
+				DDF76AF52F1645A100984DB2 /* Appfile */,
+				DDF76AF62F1645A100984DB2 /* Fastfile */,
+				DDF76AF72F1645A100984DB2 /* Matchfile */,
+				DDF76AF82F1645A100984DB2 /* Pluginfile */,
+				DDF76AF92F1645A100984DB2 /* README.md */,
+				DDF76AFA2F1645A100984DB2 /* report.xml */,
+			);
+			path = fastlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +133,7 @@
 			fileSystemSynchronizedGroups = (
 				DD426D282EFBF2BB005CD0FA /* Ornix */,
 				DDDA5E0F2EFCD39A0053E6E3 /* Videos */,
+				DDF76AF02F16455E00984DB2 /* .circleci */,
 			);
 			name = Ornix;
 			packageProductDependencies = (
@@ -152,8 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1F01682EFBF5FB00B753FB /* LaunchScreen.storyboard in Resources */,
-				DDF76AEB2F162FDB00984DB2 /* ExportOptions.plist in Resources */,
-				DD76E6452F162D3A0077AD71 /* codemagic.yaml in Resources */,
+				DDF76AFC2F1645A100984DB2 /* .env in Resources */,
+				DDF76B042F16470100984DB2 /* AuthKey_V46R39MCS2.p8 in Resources */,
+				DDF76AFD2F1645A100984DB2 /* report.xml in Resources */,
+				DDF76AFE2F1645A100984DB2 /* Pluginfile in Resources */,
+				DDF76AFF2F1645A100984DB2 /* Appfile in Resources */,
+				DDF76B002F1645A100984DB2 /* Fastfile in Resources */,
+				DDF76B012F1645A100984DB2 /* README.md in Resources */,
+				DDF76B022F1645A100984DB2 /* Matchfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
