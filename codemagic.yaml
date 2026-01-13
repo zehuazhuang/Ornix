@@ -10,17 +10,10 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.romfeminineantic.ornix
       vars:
-        APP_ID: 6757517049 # <-- 你的 App Store Connect APP ID
-        APP_VERSION: 1.0.0  # 你的主版本号
+        APP_ID: 6757517049
+        APP_VERSION: 1.0.0
       xcode: latest
-      cocoapods: default
     scripts:
-      - name: Install CocoaPods
-        script: |
-          echo "Installing CocoaPods..."
-          brew install cocoapods || true
-          pod install
-
       - name: Get latest TestFlight build number and update Info.plist
         script: |
           echo "Fetching latest TestFlight build number..."
@@ -28,7 +21,7 @@ workflows:
           NEXT_BUILD=$((LATEST_BUILD + 1))
           echo "Next build number: $NEXT_BUILD"
 
-          INFO_PLIST_PATH="Ornix/Info.plist" # 修改为你项目 Info.plist 路径
+          INFO_PLIST_PATH="Ornix/Info.plist"
           /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $NEXT_BUILD" "$INFO_PLIST_PATH"
           /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $APP_VERSION" "$INFO_PLIST_PATH"
           echo "Info.plist updated with build $NEXT_BUILD and version $APP_VERSION"
