@@ -9,7 +9,6 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.romfeminineantic.ornix
-        use_automatic_signing: true
       vars:
         APP_ID: 6757517049
         APP_VERSION: 1.0.0
@@ -35,7 +34,8 @@ workflows:
                      -sdk iphoneos \
                      -configuration Release \
                      archive \
-                     -archivePath $CM_BUILD_DIR/Ornix.xcarchive
+                     -archivePath $CM_BUILD_DIR/Ornix.xcarchive \
+                     -allowProvisioningUpdates
 
       - name: Export IPA
         script: |
@@ -43,8 +43,9 @@ workflows:
           xcodebuild -exportArchive \
                      -archivePath $CM_BUILD_DIR/Ornix.xcarchive \
                      -exportOptionsPlist ExportOptions.plist \
-                     -exportPath $CM_BUILD_DIR
-                     
+                     -exportPath $CM_BUILD_DIR \
+                     -allowProvisioningUpdates
+
       - name: Upload IPA to TestFlight
         script: |
           echo "Uploading IPA to TestFlight..."
@@ -52,3 +53,4 @@ workflows:
 
     artifacts:
       - $CM_BUILD_DIR/*.ipa
+      - /tmp/xcodebuild_logs/*.log
