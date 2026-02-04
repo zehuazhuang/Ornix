@@ -1,4 +1,4 @@
-git_url("https://github.com/zehuazhuang/ios-certificates.git")
+git_url("https://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@github.com/zehuazhuang/ios-certificates.git")
 
 storage_mode("git")
 
