@@ -10,7 +10,6 @@ final class AppStorageManager {
 
     private init() {}
 
-    
     private let usersKey = "opulentUsers"
     private let focalizingPost = "focalizingPost"
     private let commentsKey = "eclectiComments"
