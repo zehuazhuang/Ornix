@@ -7,7 +7,7 @@ import SwiftUI
 final class AppStorageManager {
 
     static let shared = AppStorageManager()
-
+ 
     private init() {}
             
     private let usersKey = "opulentUsers"
