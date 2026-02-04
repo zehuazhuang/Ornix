@@ -38,7 +38,7 @@ struct ChooseInitView: View {
                         .frame(width: 100, height: 100)
                         .cornerRadius(28)
                         .padding(.bottom,16)
-                    Text("Ornix")
+                    Text("Joti")
                         .font(.system(size: 28, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.bottom,60)

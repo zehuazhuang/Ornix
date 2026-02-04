@@ -133,7 +133,7 @@ struct AiChatView: View {
                             .frame(maxWidth:.infinity,alignment: .bottom)
                         
                         VStack(alignment:.leading){
-                            Text("Ornix AI")
+                            Text("Joti AI")
                                 .font(.system(size: 28, weight: .bold))
                                 .foregroundColor(.white)
                             Text("Welcome to use! Tell me your style \npreferences and the occasions you \noften wear them, and I will customize \na super suitable accessory matching \nplan for you")

@@ -367,6 +367,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ornix/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Joti;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera for recording, allowing you to shoot and upload videos or photos and change your personal profile picture.  All photo data will be securely stored on your personal device.  We will only upload or share them with your explicit consent.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to your microphone for recording, which is a key feature for supporting voice chat.  Please rest assured that we will only access or use the recorded audio content after obtaining your explicit permission.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs to access your album to select pictures, so that you can choose and upload videos and pictures.  Any files you choose will only be used for the purposes you have approved.  They will be securely stored on your device and can only be shared with your consent.";
@@ -407,6 +408,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ornix/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Joti;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera for recording, allowing you to shoot and upload videos or photos and change your personal profile picture.  All photo data will be securely stored on your personal device.  We will only upload or share them with your explicit consent.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to your microphone for recording, which is a key feature for supporting voice chat.  Please rest assured that we will only access or use the recorded audio content after obtaining your explicit permission.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs to access your album to select pictures, so that you can choose and upload videos and pictures.  Any files you choose will only be used for the purposes you have approved.  They will be securely stored on your device and can only be shared with your consent.";

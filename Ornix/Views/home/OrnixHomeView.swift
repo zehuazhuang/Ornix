@@ -53,7 +53,7 @@ struct OrnixHomeView: View {
             ScrollView {
                 VStack(alignment:.leading,spacing: 0){
                     HStack{
-                        Text("Ornix")
+                        Text("Joti")
                             .font(.system(size: 38, weight: .black))
                                     .foregroundStyle(
                                         LinearGradient(
@@ -99,7 +99,7 @@ struct OrnixHomeView: View {
                             .scaledToFill()
                         
                         VStack(alignment:.leading){
-                            Text("Ornix AI")
+                            Text("Joti AI")
                                 .font(.system(size: 28, weight: .bold))
                                 .foregroundColor(.white)
                             Text("Don't know how to make your \naccessory combinations stand out? \nLeave it to the AI assistant to handle.")
